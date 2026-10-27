@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lufeimeng.github.io/shiguang-yingji/sitemap.xml
