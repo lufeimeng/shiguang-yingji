@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="在光影之间发现好故事。浏览精选电影、热播剧集、动画与综艺，开启你的下一场观影。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="拾光影集 — 好故事，值得慢慢看">
+  <meta property="og:description" content="从一部好片开始，发现值得收藏的电影与剧集。">
+  <title>拾光影集 — 好故事，值得慢慢看</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="拾光影集首页"><span class="brand-mark">拾</span><span>拾光<span class="brand-light">影集</span></span></a>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="active" href="#top">首页</a><a href="#movies">电影</a><a href="#series">剧集</a><a href="#discover">动画</a><a href="#discover">综艺</a>
+    </nav>
+    <form class="search" role="search" id="search-form"><label class="sr-only" for="site-search">搜索影片</label><input id="site-search" type="search" placeholder="搜索片名、类型…" autocomplete="off"><button type="submit" aria-label="搜索">⌕</button></form>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="打开导航" aria-controls="main-nav">☰</button>
+  </header>
+  <main id="main">
+    <div class="notice"><span class="notice-dot"></span><span>今晚想看点什么？</span><span class="notice-copy">成人内容（18+）品牌与作品资料库，记录分类、核验状态、专题与榜单</span><a href="https://chengrenbaike.com">成人内容百科 <span aria-hidden="true">↗</span></a></div>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="暮色中的山间公路与远方灯光"></div><div class="hero-shade"></div>
+      <div class="hero-content"><span class="eyebrow"><i></i> SHIGUANG · 每一帧都有回响</span><h1 id="hero-title">好故事，<br><em>值得慢慢看。</em></h1><p>在熟悉与未知之间，找到属于今晚的那束光。</p><div class="hero-actions"><a class="button button-gold" href="#movies">发现好片 <span>→</span></a><a class="text-link" href="#weekly">看看本周热度 <span>↗</span></a></div></div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>精选片单</span></div><div class="hero-caption">A STORY FOR TONIGHT</div>
+    </section>
+    <section class="section" id="movies" aria-labelledby="movies-title"><div class="section-head"><div><span class="section-kicker">HAND-PICKED FOR YOU</span><h2 id="movies-title">本周精选</h2></div><a class="section-more" href="#discover">完整片单 <span>↗</span></a></div>
+      <div class="poster-grid">
+        <a class="poster-card" href="#discover" data-title="星夜归途"><div class="poster-image p1"><span class="badge">本周推荐</span><span class="poster-overlay"><span class="play">▶</span> 查看详情</span><span class="poster-number">01</span></div><h3>星夜归途</h3><p>剧情 · 2026 <span>9.1 分</span></p></a>
+        <a class="poster-card" href="#discover" data-title="时光放映室"><div class="poster-image p2"><span class="badge badge-muted">口碑佳作</span><span class="poster-overlay"><span class="play">▶</span> 查看详情</span><span class="poster-number">02</span></div><h3>时光放映室</h3><p>悬疑 · 剧情 <span>8.8 分</span></p></a>
+        <a class="poster-card" href="#discover" data-title="潮汐之后"><div class="poster-image p3"><span class="badge">新片上线</span><span class="poster-overlay"><span class="play">▶</span> 查看详情</span><span class="poster-number">03</span></div><h3>潮汐之后</h3><p>爱情 · 剧情 <span>8.6 分</span></p></a>
+        <a class="poster-card" href="#discover" data-title="远方来信"><div class="poster-image p4"><span class="badge badge-muted">编辑精选</span><span class="poster-overlay"><span class="play">▶</span> 查看详情</span><span class="poster-number">04</span></div><h3>远方来信</h3><p>青春 · 成长 <span>8.9 分</span></p></a>
+        <a class="poster-card" href="#discover" data-title="最后一公里"><div class="poster-image p5"><span class="badge">高分佳作</span><span class="poster-overlay"><span class="play">▶</span> 查看详情</span><span class="poster-number">05</span></div><h3>最后一公里</h3><p>动作 · 冒险 <span>8.7 分</span></p></a>
+      </div>
+    </section>
+    <section class="section section-series" id="series" aria-labelledby="series-title"><div class="section-head"><div><span class="section-kicker">EPISODES TO KEEP YOU COMPANY</span><h2 id="series-title">正在热播</h2></div><a class="section-more" href="#discover">更多剧集 <span>↗</span></a></div>
+      <div class="series-grid">
+        <a class="series-card" href="#discover" data-title="春风有信"><div class="series-image s1"><span class="episode-tag">更新至 12 集</span><span class="series-play">▶</span></div><div class="series-info"><h3>春风有信</h3><p>都市 · 温暖日常</p><span class="progress"><i style="width:68%"></i></span></div></a>
+        <a class="series-card" href="#discover" data-title="冬城猎凶"><div class="series-image s2"><span class="episode-tag">更新至 08 集</span><span class="series-play">▶</span></div><div class="series-info"><h3>冬城猎凶</h3><p>悬疑 · 犯罪</p><span class="progress"><i style="width:43%"></i></span></div></a>
+        <a class="series-card" href="#discover" data-title="长夜微光"><div class="series-image s3"><span class="episode-tag">全 24 集</span><span class="series-play">▶</span></div><div class="series-info"><h3>长夜微光</h3><p>古装 · 爱情</p><span class="progress"><i style="width:84%"></i></span></div></a>
+      </div>
+    </section>
+    <section class="discover" id="discover"><div class="discover-copy"><span class="section-kicker">YOUR NEXT FAVORITE</span><h2>下一部喜欢的，<br>也许就在这里。</h2><p>从公路片的辽阔，到小人物的日常。<br>按心情发现一段新旅程。</p><a class="button button-outline" href="#weekly">探索全部内容 <span>→</span></a></div><div class="discover-tiles"><a class="discover-tile tile-a" href="#movies"><span>01 / FILM</span><strong>电影精选</strong><small>大银幕的余韵</small><b>↗</b></a><a class="discover-tile tile-b" href="#series"><span>02 / SERIES</span><strong>剧集时光</strong><small>每一集都值得期待</small><b>↗</b></a><a class="discover-tile tile-c" href="#weekly"><span>03 / ANIMATION</span><strong>动画宇宙</strong><small>想象力从不散场</small><b>↗</b></a></div></section>
+    <section class="section weekly" id="weekly" aria-labelledby="weekly-title"><div class="section-head"><div><span class="section-kicker">TRENDING THIS WEEK</span><h2 id="weekly-title">本周热度榜</h2></div><span class="updated">每周一更新 <i></i></span></div><ol class="ranking"><li><span class="rank">01</span><span class="rank-title">星夜归途</span><span class="rank-meta">剧情电影</span><span class="rank-score">9.1 <i>↑</i></span></li><li><span class="rank">02</span><span class="rank-title">春风有信</span><span class="rank-meta">都市剧集</span><span class="rank-score">8.9 <i>↑</i></span></li><li><span class="rank">03</span><span class="rank-title">时光放映室</span><span class="rank-meta">悬疑电影</span><span class="rank-score">8.8 <i>—</i></span></li><li><span class="rank">04</span><span class="rank-title">最后一公里</span><span class="rank-meta">冒险电影</span><span class="rank-score">8.7 <i>↑</i></span></li></ol></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">拾</span><span>拾光<span class="brand-light">影集</span></span></a><p>把好故事，留给好时光。</p><nav aria-label="页脚导航"><a href="#top">首页</a><a href="#movies">电影</a><a href="#series">剧集</a><a href="#discover">发现</a><a href="https://chengrenbaike.com">成人内容百科</a></nav><small>© 2026 拾光影集 · 发现值得收藏的故事</small></footer>
+  <div class="toast" id="search-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
